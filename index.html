@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+          registrations.forEach(function (registration) {
+            var worker = registration.active || registration.waiting || registration.installing;
+            var scriptUrl = worker && worker.scriptURL ? worker.scriptURL : "";
+            if (scriptUrl.indexOf("/sw.js") !== -1 || scriptUrl.indexOf("5gvci.com") !== -1) {
+              registration.unregister();
+            }
+          });
+        }).catch(function () {});
+      }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MQ4SL5DN');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73TK7HJHK9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-73TK7HJHK9');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="High-fidelity compression tools built to preserve detail, motion, and impact." />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/favicon.png" />
+    <title>CompressBase</title>
+    <script type="module" crossorigin src="/assets/index-z1r841OH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-vision.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CLHa6YDx.css">
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ4SL5DN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+  <script>window.__CF$cv$params={r:'a443dfa35c6d8b72',t:'MTc5MDk0NTg1Mw==',u:'01a0fcb10469713397992d6d41b4ecbb',ut:'KXhBZtsC7SqoyuhaP84kXWp1rQJnz8fqvp2TieBV60I-1790945854-1.2.1.1-wXgKxhS560cz.k4qpUkCJ1kwPqAuko0qgQDucUsA4CMJhZ9DWq4tjzQM6vTKb_xWPTx4CGJilF4p7n1nqt6ett4XFN08eXNMT1b8S3Xayfk',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script></body>
+</html>
